@@ -14,7 +14,7 @@ getEl().then(response=>{
     console.log(movies);
     moviesEl.forEach((movieEl, i) =>{
         let movie = movies[i];
-        movieEl.innerHTML = ` <a href="/movieApp/details.html?id=${movie.id}">
+        movieEl.innerHTML = ` <a href="/details.html?id=${movie.id}">
         <img src="${movie.medium_cover_image}" alt="">
         <h4>${movie.title}</h4>
         <p>${movie.year}</p>
